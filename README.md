@@ -2,9 +2,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First,
 
 ```bash
+
+```
+
+
+
+## Technology used
+- [Tailwind Css](https://tailwindcss.com/)
+- How to install next app to your project
+```bash
+#create a new folder
+#open it with vs code
+#open the command prompt using **ctrl** + j and then run => npx create-next-app@latest
+#select all requiremnt and install
+
+**run the development server:**
 npm run dev
 # or
 yarn dev
@@ -13,9 +28,4 @@ pnpm dev
 # or
 bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Technology used
-- [Tailwind Css](https://tailwindcss.com/)
-- [Next js] create a folder and then open it with vs code and open command prompt and install [npx create-next-app@latest] it
