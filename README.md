@@ -1,17 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-First,
-
-```bash
-
-```
-
-
+## Digislash Requirement
 
 ## Technology used
 - [Tailwind Css](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 - How to install next app to your project
 - create a new folder
 - open it with vs code
