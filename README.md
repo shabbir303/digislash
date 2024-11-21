@@ -16,9 +16,9 @@ First,
 - #create a new folder
 #open it with vs code
 #open the command prompt using
-<a href="#" class="button danger">cltr + J  </a>
+`cltr` + `J `
 and then run =>
-<a href="#" class="button danger"> npx create-next-app@latest</a>
+`npx create-next-app@latest`
 #select all requiremnt and install
 ```bash
 **run the development server:**
