@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const vietnam = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -21,10 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${vietnam.variable} antialiased`}
+        className={`${vietnam.variable} antialiased `}
       >
         <Header/>
-        {children}
+        <main className="">{children}</main>
+        <Footer className="mt-0"/>
       </body>
     </html>
   );
