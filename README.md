@@ -18,3 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Technology used
 - [Tailwind Css](https://tailwindcss.com/)
+- [Next js] create a folder and then open it with vs code and open command prompt and install [npx create-next-app@latest] it
