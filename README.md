@@ -14,12 +14,12 @@ First,
 - [Tailwind Css](https://tailwindcss.com/)
 - How to install next app to your project
 - create a new folder
--open it with vs code
--open the command prompt using
+- open it with vs code
+- open the command prompt using
 `cltr` + `J `
 and then run =>
 `npx create-next-app@latest`
--select all requiremnt and install
+- select all requiremnt and install
 ```bash
 **run the development server:**
 npm run dev
@@ -31,4 +31,4 @@ pnpm dev
 bun dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
--Component Library [sadcn](https://ui.shadcn.com/docs/installation/next)
+- Component Library [sadcn](https://ui.shadcn.com/docs/installation/next)
