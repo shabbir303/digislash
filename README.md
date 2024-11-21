@@ -13,15 +13,14 @@ First,
 ## Technology used
 - [Tailwind Css](https://tailwindcss.com/)
 - How to install next app to your project
-```bash
-#create a new folder
+- #create a new folder
 #open it with vs code
 #open the command prompt using
 <a href="#" class="button danger">cltr + j  </a>
 and then run =>
 <a href="#" class="button danger">npx create-next-app@latest</a>
 #select all requiremnt and install
-
+```bash
 **run the development server:**
 npm run dev
 # or
