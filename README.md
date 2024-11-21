@@ -24,3 +24,6 @@ bun dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 - Component Library [sadcn](https://ui.shadcn.com/docs/installation/next)
+
+## Package Used
+- [React Icons](https://react-icons.github.io/react-icons/) install it just using `npm install react-icons --save`
