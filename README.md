@@ -15,4 +15,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
---also uses Tailwind Css
+
+## Technology used
+- [Tailwind Css](https://tailwindcss.com/)
