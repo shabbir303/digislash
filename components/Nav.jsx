@@ -32,7 +32,7 @@ const Nav = () => {
         }
     ]
     return (
-        <nav className="flex gap-8 text-white">
+        <nav className="flex gap-8 text-black dark:text-white">
             {links.map((link, index) => {
                 return <Link 
                 href={link.path} 

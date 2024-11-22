@@ -6,7 +6,7 @@
 
 @layer base {
   body{
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-white dark:bg-black text-black dark:text-white leading-loose;
     height: 100%;
     margin: 0;
     padding: 0;
