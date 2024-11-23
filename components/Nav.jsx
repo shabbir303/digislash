@@ -29,6 +29,10 @@ const Nav = () => {
         {
             name: "contact",
             path: "/contact"
+        },
+        {
+            name:"Online Meeting",
+            path:"/meeting"
         }
     ]
     return (
