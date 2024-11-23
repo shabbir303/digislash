@@ -9,12 +9,7 @@ import { PiPhoneCallThin } from "react-icons/pi";
 import { Moon, Sun } from "lucide-react";
 // import { useTheme } from "@nextui-org/react";
 // import { useTheme } from "next-themes";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 import { useTheme } from "next-themes";
 import DarkModeToggle from "./DarkTheme/darkthemeToggle";
 
@@ -25,13 +20,21 @@ const Header = () => {
     return (
         <>
             <div>
-                <header className="py-8 xl:py-12 px-7">
+                <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-black  py-5 px-7">
                     <div className="mx-auto flex justify-center items-center">
                         <div>
                             <Link href="/">
-                                <div>
+                                <div className="flex items-center gap-[2px]">
+                                    
                                     <Image
                                         src="/favicon.ico"
+                                        alt="logo"
+                                        height={40}
+                                        width={40}
+                                        priority={true}
+                                    />
+                                    <Image
+                                        src="/ds-logo-15050.png"
                                         alt="logo"
                                         height={150}
                                         width={150}
