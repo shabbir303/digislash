@@ -19,9 +19,9 @@ const Footer = () => {
         <div>
 
 
-            <footer className="bg-[#303360]  text-white">
-                <div className="mx-auto w-full max-w-screen-2xl flex items-center ">
-                    <div className="ml-12 flex items-center justify-center gap-[200px] my-[80px]">
+            <footer className="container bg-[#303360]  text-white">
+                <div className="mx-auto w-full max-w-screen-2xl flex flex-col md:flex-row items-center ">
+                    <div className="ml-12 flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[200px] my-[80px]">
                         <div>
                             <h2 className="mb-6 text-lg font-semibold text-white uppercase dark:text-white">Head Office</h2>
                             <ul className="text-white  font-medium">
@@ -121,11 +121,11 @@ const Footer = () => {
                     
                 </div>
                 <div className='w-full h-[0.5px] bg-slate-400'></div>
-                <div className="px-4 py-8  mx-auto w-full max-w-screen-2xl flex items-center justify-between ">
-                        <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">Copyright © 2024. All Rights Reserved.
+                <div className="md:px-4 py-8  mx-auto w-full max-w-screen-2xl flex flex-col md:flex-row items-center justify-between ">
+                        <span className="text-sm text-gray-500 dark:text-gray-300 text-center">Copyright © 2024. All Rights Reserved.
                         </span>
 
-                        <div className='flex items-center gap-4 mr-[100px]'>
+                        <div className='flex items-center gap-5 md:gap-4 md:mr-[100px] mt-3 md:mt-0'>
                             <h1>Privacy Policy</h1>
                             <h1>Cookie Policy</h1>
                         </div>

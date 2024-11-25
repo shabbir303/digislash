@@ -38,13 +38,13 @@ const Assist = () => {
         
     ]
     return (
-        <div className='my-[50px]'>
+        <div className='container my-[50px]'>
             <h1 className='text-center mx-auto my-[20px] text-[25px] font-semibold'>How can we assist you by our services?
             </h1>
 
-            <div className="w-[1148px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 justify-center items-center">
+            <div className=" md:w-[1148px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-1 justify-center items-center">
         {assist.map((card, index) => (
-          <Card key={index} className="w-[265px] h-[433px] mx-auto rounded-xl shadow-lg">
+          <Card key={index} className=" md:w-[265px]  md:h-[433px] mx-auto rounded-xl shadow-lg hover:shadow-inner hover:shadow-cyan-400">
             <CardHeader>
               <Image
                 src={card.img}
