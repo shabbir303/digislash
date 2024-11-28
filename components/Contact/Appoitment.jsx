@@ -1,22 +1,43 @@
 "use client"
 
 import { useState } from "react";
-import { format, addDays } from "date-fns";
+import { format, addDays, getDay, startOfWeek } from "date-fns";
 
 const AppointmentPage = () => {
   // State to manage selected date and time
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
 
-  // Sample time slots for booking
+  // State to keep track of current day of week
+  const [currentDay, setCurrentDay] = useState(format(new Date(), "cccc"));
+
+  // Modified time slots starting at 9:30 AM in 30-minute intervals
   const timeSlots = [
+    "9:30 AM",
     "10:00 AM",
+    "10:30 AM",
     "11:00 AM",
+    "11:30 AM",
     "12:00 PM",
+    "12:30 PM",
     "1:00 PM",
+    "1:30 PM",
     "2:00 PM",
+    "2:30 PM",
     "3:00 PM",
+    "3:30 PM",
     "4:00 PM",
+    "4:30 PM",
+    "5:00 PM",
+    "5:30 PM",
+    "6:00 PM",
+    "6:30 PM",
+    "7:00 PM",
+    "7:30 PM",
+    "8:00 PM",
+    "8:30 PM",
+    "9:00 PM",
+    "9:30 PM",
   ];
 
   // Generate available dates (e.g., next 7 days)
@@ -27,11 +48,15 @@ const AppointmentPage = () => {
   // Form submission handler
   const handleBooking = (e) => {
     e.preventDefault();
-    alert(`Booking confirmed for ${selectedDate} at ${selectedTime}`);
+    if (currentDay !== "Friday") {
+      alert(`Booking confirmed for ${selectedDate} at ${selectedTime}`);
+    } else {
+      alert("Sorry, Fridays are closed for bookings.");
+    }
   };
 
   return (
-    <div className=" min-h-screen py-12 px-6">
+    <div className="min-h-screen py-12 px-6">
       <h1 className="text-center text-3xl font-bold mb-8">Book an Appointment</h1>
 
       {/* Calendar Section */}
@@ -59,7 +84,7 @@ const AppointmentPage = () => {
         {/* Right: Time Slots */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Select a Time</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-5 gap-4">
             {timeSlots.map((time, index) => (
               <button
                 key={index}
@@ -109,9 +134,9 @@ const AppointmentPage = () => {
           </div>
           <button
             type="submit"
-            disabled={!selectedDate || !selectedTime}
+            disabled={currentDay === "Friday" || !selectedDate || !selectedTime}
             className={`w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow ${
-              !selectedDate || !selectedTime ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
+              currentDay === "Friday" ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"
             }`}
           >
             Confirm Booking

@@ -4,7 +4,7 @@ import GifMobile from "./GifMobile";
 const VideoPlay = () => {
     return (
         <div>
-            <div className="container mx-auto mt-[180px] mb-10 flex flex-col md:flex-row  items-center justify-between ">
+            <div className="container mx-auto mt-[180px] mb-10 flex flex-col md:flex-row  items-center justify-between">
                 <div className="md:w-[500px]">
                     <div className="flex items-center gap-3">
                         <div className="w-[50px] h-1  bg-[#ff6900]"></div>

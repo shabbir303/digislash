@@ -1,9 +1,11 @@
 import localFont from "next/font/local";
 import { Be_Vietnam_Pro } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/themeProvide";
+import { cn } from "@/lib/utils";
+import Sidebar from "@/components/Dashboard/Sidebar";
 // import { ThemeProvider } from "@/components/theme-provider";
 
 const vietnam = Be_Vietnam_Pro({
@@ -20,13 +22,23 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function ({ children }) {
   return (
     <html lang="en">
-      <body className={`${vietnam.variable} antialiased `}>
-          <Header />
-          {children}
-        <Footer/>
+      <body
+        className={cn(
+          `min-h-screen w-full bg-white text-black flex ${vietnam.variable} antialiased `,
+          {
+            "debug-screens": process.env.NODE_ENV === "development"
+          }
+        )}
+      >
+        {/* sidebar */}
+        {/* <p className="border">Sidebar</p> */}
+        {/* <SideNavbar /> */}
+         <Sidebar/>
+        {/* main page */}
+        <div className="p-8 w-full">{children}</div>
       </body>
     </html>
   );

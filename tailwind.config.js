@@ -9,17 +9,23 @@ module.exports = {
 	],
 	prefix: "",
 	theme: {
-	  container: {
-		center: true,
-		padding: "2rem",
-		screens: {
-		  sm: "640px",
-		  md: "768px",
-		  lg: "960px",
-		  xl: "1200px",
-		  '2xl': "1440px",
+		container: {
+		  center: true, // Center the container
+		  padding: "2rem", // Set padding
+		  screens: {
+			sm: "100%",    // Full width on small screens
+			md: "768px",   // Medium screens
+			lg: "960px",   // Large screens
+			xl: "1200px",  // Extra-large screens
+			'2xl': "1440px", // 2X-large screens
+			'hd': "1920px", // Custom screen size for 1920px width
+		  },
 		},
-	  },
+		extend: {
+		  screens: {
+			hd: "1920px", // Define the custom breakpoint
+		  },
+		},
 	  fontFamily:{
 		primary:"var(--font-vietnam)"
 	  },

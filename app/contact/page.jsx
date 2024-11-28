@@ -18,17 +18,17 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        des: "(+880) 178 848 2775"
+        des: "(+880) 1782989118"
     },
     {
         icon: <FaEnvelope />,
         title: "Email",
-        des: "hossainshabbir51@gmail.com"
+        des: "digislashagency@gmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: "Address",
-        des: "Gazipur, Dhaka, Bangladesh"
+        des: "Mohammadpur 1207, Dhaka, Bangladesh"
     },
 ]
 const Contact = () => {
@@ -78,7 +78,7 @@ const Contact = () => {
         })
     }
     return (
-      <div className="container mx-auto xl:my-[150px] xl:flex-row flex-col-reverse flex gap-10 items-center justify-around  overflow-hidden mb-4 xl:mb-6">
+      <div className="container mx-auto mt-[130px]  xl:my-[150px] xl:flex-row flex-col-reverse flex gap:4 md:gap-10 items-center   overflow-hidden mb-4 xl:mb-6">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] shadow-xl dark:shadow-none dark:bg-[#121222] p-10 rounded-2xl"
@@ -129,7 +129,7 @@ const Contact = () => {
             </label>
             <button
               type="submit"
-              className="bg-accent py-3 px-8 outline-none w-fit text-primary font-bold shadow-md shadow-primary rounded-xl"
+              className="bg-[#49adf4] py-3 px-8 outline-none w-fit text-primary font-bold shadow-md shadow-primary rounded-xl"
             >
               {/* {loading ? "Sending..." : "Send"} */}
               Send
@@ -146,7 +146,7 @@ const Contact = () => {
                                 return (
                                     <li key={index} className=' flex items-center gap-6'>
                                         <div className='w-[52px] h-[52px] xl:w-[72px] flex justify-center items-center xl:h-[72px] bg-[#27272c] '>
-                                            <div className='  text-[28px] text-accent'>
+                                            <div className='  text-[28px] text-[#49adf4]'>
                                                 {info.icon}
                                             </div>
                                         </div>

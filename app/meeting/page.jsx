@@ -1,6 +1,7 @@
 // import AppointmentPage from '@/components/Contact/Appoitment';
-import GoogleCalendar from '@/components/Contact/GoogleCalendar';
+// import GoogleCalendar from '@/components/Contact/GoogleCalendar';
 // import { Calendar } from '@/components/ui/calendar';
+import MeetBooking from '@/components/Contact/MeetBooking';
 import React from 'react';
 
 const page = () => {
@@ -10,7 +11,8 @@ const page = () => {
             <div className='w-[1400px]    mt-[150px] mb-[100px] mx-auto'>
             {/* <Calendar/> */}
             {/* <AppointmentPage/> */}
-            <GoogleCalendar/>
+            {/* <GoogleCalendar/> */}
+            <MeetBooking/>
         </div>
         </div>
     );

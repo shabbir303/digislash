@@ -7,41 +7,45 @@ const Nav = () => {
     const pathName = usePathname();
     const links = [
         {
-            name: "home",
+            name: "Home",
             path: "/"
         },
         {
-            name: "about us",
+            name: "About us",
             path: "/aboutUs"
         },
         {
-            name: "pricing",
+            name: "Pricing",
             path: "/pricing"
         },
         {
-            name:"our team",
+            name:"Our Team",
             path: "/ourTeam"
         },
         {
-            name:"services",
+            name:"Services",
             path: "/services"
         },
         {
-            name: "contact",
+            name: "Contact",
             path: "/contact"
         },
         {
             name:"Online Meeting",
             path:"/meeting"
+        },
+        {
+            name:"Dashboard",
+            path:"/dashboard"
         }
     ]
     return (
-        <nav className="flex gap-8 text-black dark:text-white">
+        <nav className="flex gap-4 text-black dark:text-white">
             {links.map((link, index) => {
                 return <Link 
                 href={link.path} 
                 key={index}
-                className={`${link.path === pathName && "text-cyan-500 border-b-2 border-white"} uppercase font-[16px] hover:text-cyan-500 `}
+                className={`${link.path === pathName && "text-cyan-500 border-b-2 border-white"}  font-[16px] hover:text-cyan-500 `}
                 >
                     {link.name}
                 </Link>
