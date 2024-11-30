@@ -1,4 +1,4 @@
-"use client";
+
 import { Bentham } from "next/font/google";
 import Image from "next/image";
 import { SiYoutubekids } from "react-icons/si";

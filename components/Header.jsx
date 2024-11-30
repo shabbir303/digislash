@@ -50,12 +50,14 @@ const Header = () => {
                             <Nav />
 
                             {/* <SelectDasboard/> */}
+                            <div>
                             <Link href="/contact">
-                                    <button className="bg-cyan-400 text-white mr-[100px] flex items-center justify-center mx-auto w-[200px] h-[66px] gap-3 rounded-full">
+                                    <button className="bg-cyan-400 text-white mr-[100px] flex items-center justify-center mx-auto w-[200px] h-[66px] gap-3 rounded-full ">
                                         <PiPhoneCallThin style={{ fontSize: "40px", color: "white" }} />
                                         <h1 className="text-[16px]">Book Now</h1>
                                     </button>
                                 </Link>
+                            </div>
                         </div>
                         {/* mobile nav */}
                         <div className="xl:hidden w-[30px]">

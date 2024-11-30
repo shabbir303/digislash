@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${vietnam.variable} antialiased `}>
-          <Header />
-          {children}
-        <Footer/>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

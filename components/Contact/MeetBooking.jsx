@@ -261,11 +261,11 @@ const MeetBooking = () => {
       <h1 className="text-center text-3xl font-bold mb-8">Book an Appointment</h1>
 
       {/* Calendar Section */}
-      <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12  mx-auto">
         {/* Left: Calendar */}
-        <div>
+        <div className="container mx-auto" >
           <h2 className="text-xl font-semibold mb-4">Select a Date</h2>
-          <div className="grid grid-cols-4 gap-4">
+          <div className=" grid  grid-cols-4 gap-4">
             {availableDates.map((date, index) => (
               <button
                 key={index}
@@ -285,7 +285,7 @@ const MeetBooking = () => {
         {/* Right: Time Slots */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Select a Time</h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             {timeSlots.map((time, index) => (
               <button
                 key={index}

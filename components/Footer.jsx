@@ -9,6 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import Link from 'next/link';
 
 
 // import { FaYoutube } from "react-icons/fa";
@@ -17,11 +18,11 @@ import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
     return (
         <div>
+           
 
-
-            <footer className="container bg-[#303360]  text-white">
-                <div className="mx-auto w-full max-w-screen-2xl flex flex-col md:flex-row items-center ">
-                    <div className="ml-12 flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[200px] my-[80px]">
+            <footer className=" bg-[#303360]  text-white">
+                <div className=" container mx-auto w-full  flex flex-col lg:flex-row items-center ">
+                    <div className=" flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[200px] my-[80px]">
                         <div>
                             <h2 className="mb-6 text-lg font-semibold text-white uppercase dark:text-white">Head Office</h2>
                             <ul className="text-white  font-medium">
@@ -43,7 +44,7 @@ const Footer = () => {
                             <h2 className="mb-6 text-lg font-semibold text-white uppercase dark:text-white">About</h2>
                             <ul className="text-white font-medium">
                                 <li className="mb-4">
-                                    <a href="#" className="hover:hover:text-cyan-500">About Us</a>
+                                    <Link href="/aboutUs" className="hover:hover:text-cyan-500">About Us</Link>
                                 </li>
                                 <li className="mb-4">
                                     <a href="#" className="hover:hover:text-cyan-500">Our Team</a>
@@ -77,10 +78,10 @@ const Footer = () => {
                         </div>
 
                         <div>
-
+                        <h2 className="mb-6 text-lg font-semibold text-white uppercase "></h2>
                             <ul className="text-white  font-medium ">
                                 <li className="mb-4">
-                                    <div className='flex justify-center items-center gap-4 mb-6'>
+                                    <div className='flex  items-center gap-4 mb-6'>
                                     <PiPhoneCallThin
                                     style={{ fontSize: "30px", color: "#49adf4" }} />
                                         <div>
@@ -88,7 +89,7 @@ const Footer = () => {
                                             <h1 className='text-[#49adf4] text-xl'>+8801782989118</h1>
                                         </div>
                                     </div>
-                                    <div className='flex justify-center items-center gap-4'>
+                                    <div className='flex  items-center gap-4'>
                                         <TfiHeadphoneAlt 
                                         style={{ fontSize: "30px", color: "#49adf4" }} />
                                         <div>
@@ -98,19 +99,21 @@ const Footer = () => {
                                     </div>
                                 </li>
                                 
-                                <li className="mb-4 flex items-center gap-2 mt-6">
-                                    <button className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[0.25px] border-slate-500'><FaFacebookF
+                                <li className="mb-4 ">
+                                   <div className="flex items-center gap-2 mt-6">
+                                   <a href="https://www.facebook.com/DigiSlashAgency" target="_blank" className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[0.25px] border-slate-500'><FaFacebookF
                                     className='text-xl'/>
-                                    </button>
-                                    <button className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaYoutube
+                                    </a>
+                                    <a href="https://www.youtube.com/@digislash" target="_blank" className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaYoutube
                                     className='text-xl'/>
-                                    </button>
-                                    <button className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaInstagram
+                                    </a>
+                                    <a href="https://www.instagram.com/digislashagency" target="_blank" className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaInstagram
                                     className='text-xl'/>
-                                    </button>
-                                    <button className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaTwitter
+                                    </a>
+                                    <a href="https://x.com/DigiSlashAgency" target="_blank" className='w-[45px] h-[45px] items-center mx-auto flex justify-center hover:bg-cyan-500 rounded-full border-[1px] border-slate-500'><FaTwitter
                                     className='text-xl'/>
-                                    </button>
+                                    </a>
+                                   </div>
                                 </li>
 
                             </ul>

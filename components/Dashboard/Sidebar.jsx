@@ -40,7 +40,7 @@ const Sidebar = () => {
                 label: "",
                 icon: Archive,
                 variant: "ghost",
-                href:"/dashboard/home"
+                href:"/"
               },
               {
                 title: "Inbox",
