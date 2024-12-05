@@ -22,12 +22,14 @@ const Header = () => {
     return (
         <>
             <div>
+                
+
                 <header className="fixed top-0 left-0 w-full z-50 bg-white py-8 xl:py-12  ">
-                    <div className="container mx-auto flex justify-between items-center">
+                    <div className="container  flex justify-between items-center">
                         <div>
-                        <Link href="/">
+                            <Link href="/">
                                 <div className="flex items-center gap-[2px]">
-                                    
+
                                     <Image
                                         src="/favicon.ico"
                                         alt="logo"
@@ -46,12 +48,14 @@ const Header = () => {
                             </Link>
                         </div>
                         {/* desktop nav */}
-                        <div className="hidden xl:flex mx-auto gap-8 items-center ">
+                        <div className="hidden xl:flex justify-between   gap-8 items-center ">
+                            <div>
                             <Nav />
+                            </div>
 
                             {/* <SelectDasboard/> */}
                             <div>
-                            <Link href="/contact">
+                                <Link href="/contact">
                                     <button className="bg-cyan-400 text-white mr-[100px] flex items-center justify-center mx-auto w-[200px] h-[66px] gap-3 rounded-full ">
                                         <PiPhoneCallThin style={{ fontSize: "40px", color: "white" }} />
                                         <h1 className="text-[16px]">Book Now</h1>

@@ -257,15 +257,15 @@ const MeetBooking = () => {
   };
 
   return (
-    <div className="min-h-screen py-12 px-6">
-      <h1 className="text-center text-3xl font-bold mb-8">Book an Appointment</h1>
+    <div className="container min-h-screen py-12 px-6">
+      <h1 className="md:text-center text-3xl font-bold mb-8">Book an Appointment</h1>
 
       {/* Calendar Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12  mx-auto">
         {/* Left: Calendar */}
-        <div className="container mx-auto" >
+        <div className="" >
           <h2 className="text-xl font-semibold mb-4">Select a Date</h2>
-          <div className=" grid  grid-cols-4 gap-4">
+          <div className="w-full mx-auto grid  grid-cols-1  md:grid-cols-4 gap-4">
             {availableDates.map((date, index) => (
               <button
                 key={index}

@@ -21,7 +21,7 @@ const Footer = () => {
            
 
             <footer className=" bg-[#303360]  text-white">
-                <div className=" container mx-auto w-full  flex flex-col lg:flex-row items-center ">
+                <div className=" container pt-[30px]">
                     <div className=" flex flex-col md:flex-row md:items-center md:justify-center gap-[50px] md:gap-[200px] my-[80px]">
                         <div>
                             <h2 className="mb-6 text-lg font-semibold text-white uppercase dark:text-white">Head Office</h2>
@@ -36,7 +36,7 @@ const Footer = () => {
                                 </li>
                                 <li className="mb-4 flex items-center gap-2">
                                 <IoMdTime className='text-2xl text-cyan-500'/>
-                                <a href="#" className="hover:hover:text-cyan-500">Monday to Saturday: 9.00am to 16.pm</a>
+                                <a href="#" className="hover:hover:text-cyan-500">Monday to Saturday: 9.00am to 6.00pm</a>
                                 </li>
                             </ul>
                         </div>
