@@ -21,3 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Package Used
 - [React Icons](https://react-icons.github.io/react-icons/) install it just using `npm install react-icons --save`
+
+## Deploy on Firebase
+- [Live Link](https://digislash-demo.web.app/)
