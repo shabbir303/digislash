@@ -8,6 +8,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Image from 'next/image';
+import Link from 'next/link';
 const Assist = () => {
 
     const assist = [
@@ -74,6 +75,7 @@ const Assist = () => {
           </Card>
         ))}
       </div>
+      <Link href="/meeting" className='flex justify-center items-center pt-[80px] pb-[90px]'><button className='text-[18px] text-white bg-[#2EA2F4] hover:bg-white hover:text-[#2EA2F4] shadow-xl border-[1px] border-[#2EA2F4] text-center  rounded-xl '><h1 className='px-[35px] py-[10px]'>Get A Free Consultation</h1> </button></Link> 
         </div>
     );
 };
