@@ -5,6 +5,7 @@ import Assist from './assist';
 import VideoPlay from './videoPlay';
 import OurWork from './weDo';
 import About from './About';
+import Pricing from './Pricing';
 const Hero = () => {
     return (
         < >
@@ -13,6 +14,7 @@ const Hero = () => {
             <Assist/>
             {/* <OurWork/> */}
             <About/>
+            <Pricing/>
         </>
     );
 };
