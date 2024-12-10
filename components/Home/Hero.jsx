@@ -6,11 +6,13 @@ import VideoPlay from './videoPlay';
 import OurWork from './weDo';
 import About from './About';
 import Pricing from './Pricing';
+
 const Hero = () => {
     return (
         < >
             <VideoPlay/>
-            {/* <Working/> */}
+            
+            <Working/>
             <Assist/>
             {/* <OurWork/> */}
             <About/>

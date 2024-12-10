@@ -9,19 +9,19 @@ import React from "react";
 
 const Pricing = () => {
     return (
-        <div className="bg-[#cecbcb55] ">
+        <div className="md:bg-[#cecbcb55] ">
             <section className="bg-[url('/pricingBG.svg')] bg-cover bg-center  relative z-10 overflow-hidden pb-12 pt-[100px] lg:pb-[90px] lg:pt-[120px]">
                 <div className="container mx-auto">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
                             <div className="mx-auto mb-[60px] max-w-[510px] text-center pt-[250px]">
-                                <span className="mb-2 block text-lg font-semibold text-white">
+                                <span className="mb-2 block text-lg font-semibold text-black md:text-white">
                                     Pricing Table
                                 </span>
-                                <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-white  sm:text-4xl md:text-[40px]">
+                                <h2 className="mb-3 text-3xl font-bold leading-[1.208] md:text-white  sm:text-4xl md:text-[40px]">
                                     Our Pricing Plan
                                 </h2>
-                                <p className="text-base text-white text-body-color ">
+                                <p className="text-base md:text-white text-body-color ">
                                     There are many variations of passages of Lorem Ipsum available
                                     but the majority have suffered alteration in some form.
                                 </p>
@@ -34,7 +34,7 @@ const Pricing = () => {
                             <PricingCard
                                 type="Media Buying"
                                 price="$59"
-                                subscription="year"
+                                subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Media Buying Package optimizes ad spend with targeted campaigns, advanced tracking, and in-depth analytics—designed to amplify reach and maximize results</span>}
                                 buttonText="Get Started"
                             >
@@ -84,7 +84,7 @@ const Pricing = () => {
                             <PricingCard
                                 type="Content Creation"
                                 price="$59"
-                                subscription="year"
+                                subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Content Creation Package fuels performance with impactful visuals and persuasive copy, from graphics and reels to video editing and ad writing—designed to drive results.</span>}
                                 buttonText="Get Started"
                             >
@@ -146,7 +146,7 @@ const Pricing = () => {
                             <PricingCard
                                 type="Entrepreneur"
                                 price="$59"
-                                subscription="year"
+                                subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Entrepreneur Package offers a full suite for digital growth: targeted ads, analytics, tracking, content creation, and expert consultation to drive success.</span>}
                                 buttonText="Get Started"
                             >
@@ -173,23 +173,23 @@ const Pricing = () => {
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         TikTok Tracking <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                        Content Creation <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                        Content Creation <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                        Business Consultation <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                        Business Consultation <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                        Monthly Meeting <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                        Monthly Meeting <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                    Business Growth Plan <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Business Growth Plan <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                    Marketing Plan <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Marketing Plan <span className="ml-auto text-green-500">✔</span>
                                     </li>
-                                    <li className="flex items-center text-[18px] text-[#7d7d7d] font-light">
-                                    Marketing Budget Plan <span className="ml-auto text-red-500">✘</span>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Marketing Budget Plan <span className="ml-auto text-green-500">✔</span>
                                     </li>
                                 </ul>
                             </PricingCard>
