@@ -3,17 +3,8 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { TbPhoneCall } from "react-icons/tb";
 import { PiPhoneCallThin } from "react-icons/pi";
-import { Moon, Sun } from "lucide-react";
-// import { useTheme } from "@nextui-org/react";
-// import { useTheme } from "next-themes";
-
-import { useTheme } from "next-themes";
-import DarkModeToggle from "./DarkTheme/darkthemeToggle";
 import MobileNav from "./MobileNav";
-import SelectDasboard from "./Home/SelectDasboard";
 
 
 const Header = () => {

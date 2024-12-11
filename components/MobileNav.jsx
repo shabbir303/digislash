@@ -1,16 +1,9 @@
 "use client"
-import { Button } from "./ui/button";
 import { CiMenuFries } from "react-icons/ci";
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
     Sheet,
     SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { usePathname } from "next/navigation";

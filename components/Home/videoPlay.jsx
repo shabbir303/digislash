@@ -1,6 +1,5 @@
 import { SiYoutubekids } from "react-icons/si";
 import Image from "next/image";
-import GifMobile from "./GifMobile";
 const VideoPlay = () => {
     return (
         <div>

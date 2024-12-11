@@ -1,14 +1,10 @@
 "use client"
-import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiNodedotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // import { ScrollArea } from "@/components/ui/scroll-area";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+// import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
 import Image from "next/image";
 
 const marketing = {

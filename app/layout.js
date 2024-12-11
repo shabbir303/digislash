@@ -1,10 +1,8 @@
-import localFont from "next/font/local";
+
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/themeProvide";
-// import { ThemeProvider } from "@/components/theme-provider";
 
 const vietnam = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -44,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             src="https://www.googletagmanager.com/ns.html?id=GTM-MHWVQQ34"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            style={{display:"none",visibility:"hidden"}}
           ></iframe>
         </noscript>
         <Header />

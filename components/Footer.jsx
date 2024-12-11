@@ -1,7 +1,6 @@
 import React from 'react';
 import { PiPhoneCallThin } from "react-icons/pi";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { Separator } from "@/components/ui/separator"
 import { IoMdTime } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
