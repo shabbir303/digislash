@@ -34,14 +34,14 @@ const Team = () => {
     return (
         <div className="container mt-[80px] md:w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[50px]">
             {
-              team.map((tea, i)=>{
+              team.map((tea, index)=>{
                 return(
                 <div 
-                key={i}>
+                key={index}>
                     <div 
                       style={{
-                        backgroundImage: `url(${tea.img})`,
-                        backgroundSize: "cover",
+                        backgroundImage:`url(${tea.img})`,
+                        backgroundSize:"cover",
                         backgroundPosition: "center",
                       }}
                     className="bg-cover bg-center rounded-lg p-[30px] flex flex-col items-center text-center text-[50px] w-[100px] h-[100px] text-[#FE7146]">
