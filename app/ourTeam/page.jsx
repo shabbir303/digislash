@@ -1,9 +1,10 @@
+import Top from '@/components/Team/Top';
 import React from 'react';
 
 const team = () => {
     return (
-        <div>
-            
+        <div className='mt-[100px]'>
+            <Top/>
         </div>
     );
 };
