@@ -20,7 +20,7 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <Image src="/about.jpg" alt="about" width={612} height={408}/>
+                <Image src="/About-Us.gif" alt="about" width={612} height={408}/>
             </div>
         </div>
     );

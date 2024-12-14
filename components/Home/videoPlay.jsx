@@ -1,5 +1,6 @@
 import { SiYoutubekids } from "react-icons/si";
 import Image from "next/image";
+import Link from "next/link";
 const VideoPlay = () => {
     return (
         <div>
@@ -19,9 +20,11 @@ const VideoPlay = () => {
                         campaigns.
                     </p>
                     <div className="mt-[20px] xl:mt-[50px] flex items-center gap-[20px]  xl:gap-[50px]  ">
-                        <button className="bg-blue-400 w-[150px] h-[50px] rounded-3xl ">
+                        <Link href="/meeting">
+                        <button className="bg-[#2EA2F4] w-[150px] h-[50px] rounded-3xl text-white">
                             Book now
                         </button>
+                        </Link>
                         <a
                             href="https://www.youtube.com/watch?v=wOrn4151WSQ"
                             target="_blank"

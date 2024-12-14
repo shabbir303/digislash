@@ -3,7 +3,7 @@ import React from 'react';
 
 const about = () => {
     return (
-        <div className='mt-[100px]'>
+        <div className='mt-[120px] md:mt-[100px] '>
             <Allabout/>
         </div>
     );

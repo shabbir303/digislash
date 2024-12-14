@@ -10,20 +10,19 @@ import React from "react";
 const Pricing = () => {
     return (
         <div className="md:bg-[#cecbcb55] ">
-            <section className="bg-[url('/pricingBG.svg')] bg-cover bg-center  relative z-10 overflow-hidden pb-12 pt-[100px] lg:pb-[90px] lg:pt-[120px]">
-                <div className="container mx-auto">
+            <section className="bg-[#2EA2F4] bg-cover bg-center  relative z-10 overflow-hidden pb-12 pt-[50px] lg:pb-[90px] lg:pt-[120px]">
+                <div className="container mx-auto md:w-[1440px]">
                     <div className="-mx-4 flex flex-wrap">
                         <div className="w-full px-4">
-                            <div className="mx-auto mb-[60px] max-w-[510px] text-center pt-[250px]">
-                                <span className="mb-2 block text-lg font-semibold text-black md:text-white">
+                            <div className="mx-auto mb-[60px] max-w-[510px] text-center ">
+                                <span className="mb-2 block text-lg font-semibold text-white">
                                     Pricing Table
                                 </span>
-                                <h2 className="mb-3 text-3xl font-bold leading-[1.208] md:text-white  sm:text-4xl md:text-[40px]">
+                                <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-white  sm:text-4xl md:text-[40px]">
                                     Our Pricing Plan
                                 </h2>
-                                <p className="text-base md:text-white text-body-color ">
-                                    There are many variations of passages of Lorem Ipsum available
-                                    but the majority have suffered alteration in some form.
+                                <p className="text-base text-white text-body-color ">
+                                Our premium packages fuel growth with targeted ads, captivating content, and end-to-end marketing solutions.
                                 </p>
                             </div>
                         </div>
@@ -33,7 +32,7 @@ const Pricing = () => {
                         <div className="-mx-4 flex flex-wrap">
                             <PricingCard
                                 type="Media Buying"
-                                price="$59"
+                                price="$200"
                                 subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Media Buying Package optimizes ad spend with targeted campaigns, advanced tracking, and in-depth analytics—designed to amplify reach and maximize results</span>}
                                 buttonText="Get Started"
@@ -57,6 +56,18 @@ const Pricing = () => {
                                     </li>
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         GA4 Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Heatmaps Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Server Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    FB Pixel & SS Tracking <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    GADS Conversion Tracking <span className="ml-auto text-green-500">✔</span>
                                     </li>
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         TikTok Tracking <span className="ml-auto text-green-500">✔</span>
@@ -83,7 +94,7 @@ const Pricing = () => {
                             </PricingCard>
                             <PricingCard
                                 type="Content Creation"
-                                price="$59"
+                                price="$300"
                                 subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Content Creation Package fuels performance with impactful visuals and persuasive copy, from graphics and reels to video editing and ad writing—designed to drive results.</span>}
                                 buttonText="Get Started"
@@ -145,14 +156,14 @@ const Pricing = () => {
                             </PricingCard>
                             <PricingCard
                                 type="Entrepreneur"
-                                price="$59"
+                                price="$1000"
                                 subscription="month"
                                 description={<span className="text-[16px] text-[#555] font-light">Our Entrepreneur Package offers a full suite for digital growth: targeted ads, analytics, tracking, content creation, and expert consultation to drive success.</span>}
                                 buttonText="Get Started"
                             >
                                 {/* <div className="border-[1px] w-full border-gray-400"></div> */}
                                 <ul className="space-y-2 mt-4">
-                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         Media Buying <span className="ml-auto text-green-500">✔</span>
                                     </li>
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
@@ -169,6 +180,18 @@ const Pricing = () => {
                                     </li>
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         GA4 Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Heatmaps Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    Server Setup <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    FB Pixel & SS Tracking <span className="ml-auto text-green-500">✔</span>
+                                    </li>
+                                    <li className="flex items-center text-[18px] text-[#00092C] font-light">
+                                    GADS Conversion Tracking <span className="ml-auto text-green-500">✔</span>
                                     </li>
                                     <li className="flex items-center text-[18px] text-[#00092C] font-light">
                                         TikTok Tracking <span className="ml-auto text-green-500">✔</span>
@@ -233,8 +256,8 @@ const PricingCard = ({
                     <a
                         href="/#"
                         className={` ${active
-                                ? "block w-full rounded-md border border-primary bg-primary p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
-                                : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-primary transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3"
+                                ? "block w-[100px] rounded-md border border-primary bg-[#2EA2F4] p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
+                                : "block w-[200px] mx-auto rounded-xl border border-stroke bg-transparent p-3 text-center text-base font-medium text-primary transition hover:border-none hover:bg-[#2EA2F4] hover:text-white dark:border-dark-3"
                             } `}
                     >
                         {buttonText}

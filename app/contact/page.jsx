@@ -15,82 +15,82 @@ import { slideIn } from '@/components/Motion';
 import { styles } from '@/components/Styles';
 
 const info = [
-    {
-        icon: <FaPhoneAlt />,
-        title: "Phone",
-        des: "(+880) 1782989118"
-    },
-    {
-        icon: <FaEnvelope />,
-        title: "Email",
-        des: "digislashagency@gmail.com"
-    },
-    {
-        icon: <FaMapMarkerAlt />,
-        title: "Address",
-        des: "Mohammadpur 1207, Dhaka, Bangladesh"
-    },
+  {
+    icon: <FaPhoneAlt />,
+    title: "Phone",
+    des: "(+880) 1782989118"
+  },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    des: "digislashagency@gmail.com"
+  },
+  {
+    icon: <FaMapMarkerAlt />,
+    title: "Address",
+    des: "Mohammadpur 1207, Dhaka, Bangladesh"
+  },
 ]
 const Contact = () => {
 
-    // service_s086zxl
-    // template_lau62pa
-    // 4-Uo5ZMCgrDWYFY-8
-    // iozn0fg4AS1bcAh3au9D1
-    const formRef = useRef();
-    const [form, setForm] = useState({
-      name: "",
-      email: "",
-      message: ""
-    });
-    // const [loading, setLoading] = useState(false);
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setForm({ ...form, [name]: value })
-    };
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // setLoading(true);
-      emailjs.send("service_ajkd1ak", "template_8hewqki",
-        {
-          from_name: form.name,
-          from_email: form.email,
-          to_name: "Shabbir",
-          to_email: "shabbirtanbir@gmail.com",
-          message: form.message
-        },
-        "4-Uo5ZMCgrDWYFY-8"
-      )
-        .then(() => {
-          // setLoading(true);
-          toast.success("Thank you. I will get back with you as soon as possible");
-          setForm({
-            name: "",
-            email: "",
-            message: ""
-          })
-          
-          ,
-          (error)=>{
-          //  setLoading(false);
-           toast.error(error.message);
-          }
+  // service_s086zxl
+  // template_lau62pa
+  // 4-Uo5ZMCgrDWYFY-8
+  // iozn0fg4AS1bcAh3au9D1
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  // const [loading, setLoading] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value })
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setLoading(true);
+    emailjs.send("service_ajkd1ak", "template_8hewqki",
+      {
+        from_name: form.name,
+        from_email: form.email,
+        to_name: "Shabbir",
+        to_email: "shabbirtanbir@gmail.com",
+        message: form.message
+      },
+      "4-Uo5ZMCgrDWYFY-8"
+    )
+      .then(() => {
+        // setLoading(true);
+        toast.success("Thank you. I will get back with you as soon as possible");
+        setForm({
+          name: "",
+          email: "",
+          message: ""
         })
-    }
-    return (
-      <div className="container  mt-[130px]  xl:my-[150px] xl:flex-row flex-col-reverse flex gap:4 md:gap-10 items-center   overflow-hidden mb-4 xl:mb-6">
-        <motion.div
-          variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] shadow-xl dark:shadow-none dark:bg-[#121222] p-10 rounded-2xl"
+
+          ,
+          (error) => {
+            //  setLoading(false);
+            toast.error(error.message);
+          }
+      })
+  }
+  return (
+    <div className="container  mt-[130px]  xl:my-[180px] xl:flex-row flex-col-reverse flex gap:4 md:gap-10 items-center justify-center xl:w-[1440px] overflow-hidden mb-4 xl:mb-6">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[0.75] shadow-xl border-[1px] dark:shadow-none dark:bg-[#121222] p-10 rounded-2xl"
+      >
+        <p className={styles.sectionSubText}>Get In Touch</p>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-12 flex flex-col gap-8"
         >
-          <p className={styles.sectionSubText}>Get In Touch</p>
-          <h3 className={styles.sectionHeadText}>Contact</h3>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
-          >
-            <div className='flex flex-col xl:flex-row gap-4'>
+          <div className='flex flex-col xl:flex-row gap-4'>
             <label className="flex flex-col">
               <span className=" font-medium mb-4"> Your Name</span>
               <input
@@ -113,60 +113,60 @@ const Contact = () => {
                 className="bg-slate-300 dark:bg-[#27272c] py-4 px-6 placeholder:text-secondary text-black dark:text-white rounded-xl outline-none border-none font-medium"
               />
             </label>
-            </div>
-            <label className="flex flex-col">
-              <span className="text-black dark:text-white font-medium mb-4"> Your Message</span>
-              <textarea
-                // type="text"
-                rows="3"
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                placeholder="What do you want to say?"
-                className="bg-slate-300 dark:bg-[#27272c] py-4 px-6 placeholder:text-secondary text-black dark:text-white rounded-xl outline-none border-none font-medium"
-              />
-            </label>
-            <button
-              type="submit"
-              className="bg-[#49adf4] py-3 px-8 outline-none w-fit text-primary font-bold shadow-md shadow-primary rounded-xl"
-            >
-              {/* {loading ? "Sending..." : "Send"} */}
-              Send
-            </button>
-          </form>
-        </motion.div>
-        <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        >
-         <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-4 xl:mb-0'>
-                        <ul className='flex flex-col gap-6'>
-                            {info.map((info, index) => {
-                                return (
-                                    <li key={index} className=' flex items-center gap-6'>
-                                        <div className='w-[52px] h-[52px] xl:w-[72px] flex justify-center items-center xl:h-[72px] bg-[#27272c] '>
-                                            <div className='  text-[28px] text-[#49adf4]'>
-                                                {info.icon}
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>{info.title}</p>
-                                            <h3 className='text-slate-600 dark:text-white/50'>{info.des}</h3>
-                                        </div>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+          </div>
+          <label className="flex flex-col">
+            <span className="text-black dark:text-white font-medium mb-4"> Your Message</span>
+            <textarea
+              // type="text"
+              rows="3"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              required
+              placeholder="What do you want to say?"
+              className="bg-slate-300 dark:bg-[#27272c] py-4 px-6 placeholder:text-secondary text-black dark:text-white rounded-xl outline-none border-none font-medium"
+            />
+          </label>
+          <button
+            type="submit"
+            className="bg-[#49adf4] py-3 px-8 outline-none w-fit text-primary font-bold shadow-md shadow-primary rounded-xl"
+          >
+            {/* {loading ? "Sending..." : "Send"} */}
+            Send
+          </button>
+        </form>
+      </motion.div>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-4 xl:mb-0'>
+          <ul className='flex flex-col gap-6'>
+            {info.map((info, index) => {
+              return (
+                <li key={index} className=' flex items-center gap-6'>
+                  <div className='w-[52px] h-[52px] xl:w-[72px] flex justify-center items-center xl:h-[72px] bg-[#27272c] '>
+                    <div className='  text-[28px] text-[#49adf4]'>
+                      {info.icon}
                     </div>
-        </motion.div>
-        <Toaster
-    position="bottom-center"
-    reverseOrder={false}
-  />
-      </div>
-    )
-  }
+                  </div>
+                  <div>
+                    <p>{info.title}</p>
+                    <h3 className='text-slate-600 dark:text-white/50'>{info.des}</h3>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </motion.div>
+      <Toaster
+        position="bottom-center"
+        reverseOrder={false}
+      />
+    </div>
+  )
+}
 
 export default Contact;
 

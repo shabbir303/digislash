@@ -38,7 +38,7 @@ const Stats = () => {
         },
     ]
     return (
-        <section className="pt-4 pb-12 xl:pb-0 xl:pt-0 my-[100px]">
+        <section className="container md:w-[1440px]   my-[100px]">
             {/* <div className="container mx-auto">
                 <div className="flex flex-wrap justify-center items-center gap-6   ">
                     {stats.map((item, index)=>
@@ -54,7 +54,7 @@ const Stats = () => {
                     )}
                 </div>
             </div> */}
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+            <div className="  grid grid-cols-2 md:grid-cols-4  gap-6 md:gap-[100px]">
                 {stats.map((item, index) => (
                     <div
                         key={index}

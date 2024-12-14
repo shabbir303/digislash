@@ -22,7 +22,7 @@ const Working = () => {
                         {steps.map((step, index) => (
                             <div className="w-[220px]  hover:shadow-inner hover:shadow-[#039BE5] rounded-xl  h-[192px] p-[10px] shadow-xl bg-white border-[1px] border-[#55555]" key={index}>
                                 <div className="flex justify-center items-center"><img src={step.icon} alt="box" width={70} height={70} /> </div>
-                                <div className="text-[13px] text-[#0C0C0C] leading-[15px] mt-3" >{step.title}</div>
+                                <div className="text-[13px] text-center text-[#0C0C0C] leading-[15px] mt-3" >{step.title}</div>
                             </div>
                         ))}
                     </div>
