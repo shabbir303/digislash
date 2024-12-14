@@ -28,7 +28,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    des: "Mohammadpur 1207, Dhaka, Bangladesh"
+    des: "Mohammadpur Basila 40 Feet, Future Town, Road - 4 , House - 10, Dhaka, Bangladesh"
   },
 ]
 const Contact = () => {
@@ -78,7 +78,7 @@ const Contact = () => {
       })
   }
   return (
-    <div className="container  mt-[130px]  xl:my-[180px] xl:flex-row flex-col-reverse flex gap:4 md:gap-10 items-center justify-center xl:w-[1440px] overflow-hidden mb-4 xl:mb-6">
+    <div className="container  mt-[130px]  xl:my-[180px] xl:flex-row flex-col-reverse flex gap:4 md:gap-[200px] items-center justify-center xl:w-[1440px] overflow-hidden mb-4 xl:mb-6">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] shadow-xl border-[1px] dark:shadow-none dark:bg-[#121222] p-10 rounded-2xl"

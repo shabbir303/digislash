@@ -17,7 +17,7 @@ import Image from 'next/image';
 const Slider = () => {
     return (
         <div className='container mt-[50px] md:mt-0'>
-         <div className='bg-[url("/bgTest.png")]  no-repeat bg-center'>
+         <div className=''>
          <h1 className='text-[16px] text-[#2EA2F4] font-medium uppercase'>Testiomonials</h1>
          <h1 className='text-[40px] text-[#00092C] font-bold mt-[15px] mb-[20px] leading-[45px]'>Our Happy Customers</h1>
          </div>

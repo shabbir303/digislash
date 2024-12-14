@@ -42,9 +42,9 @@ const Assist = () => {
             <h1 className='text-center mx-auto my-[20px] text-[25px] font-semibold'>How can we assist you by our services?
             </h1>
 
-            <div className=" md:w-[1148px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-1 justify-center items-center">
+            <div className=" md:w-[1148px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-center items-center">
         {assist.map((card, index) => (
-          <Card key={index} className=" md:w-[265px]  md:h-[433px] mx-auto rounded-xl shadow-lg hover:shadow-inner hover:shadow-cyan-400">
+          <Card key={index} className=" md:h-[500px] mx-auto rounded-xl shadow-lg hover:shadow-inner hover:shadow-cyan-400">
             <CardHeader>
               <Image
                 src={card.img}
@@ -54,7 +54,7 @@ const Assist = () => {
                 className="w-[100px] h-[100px] mx-auto"
               />
               <CardTitle className="text-center py-6">{card.name}</CardTitle>
-              <CardDescription className="text-center mt-4">
+              <CardDescription className="text-center mt-4 text-[#555] text-[16px]">
                 {card.des}
               </CardDescription>
             </CardHeader>
